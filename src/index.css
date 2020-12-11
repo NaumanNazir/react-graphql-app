@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.message-container {
+  background: #C3D8DE;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message-container h3 {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 0;
+}
+
+.message-container h3:before {
+  content:"• ";
+  position: absolute;
+  left: 0;
+  top: -6px;
+  bottom: 0;
+  font-size: 25px;
+  color: chartreuse;
+}
+
+.chat-box {
+  background-color: white;
+  height: 217px;
+  width: auto;
+  padding: 5px 15px;
+  border-radius: 5px 5px 0 0;
+  overflow: auto;
+}
+
+.message-form {
+  background-color: white;
+  padding: 10px 15px 25px;
+  border-radius: 0 0 5px 5px;
+}
+
+.message-form textarea {
+  width: 100%;
+  max-width: 547px;
+  height: 60px;
+  padding: 10px;
+}
